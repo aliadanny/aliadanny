@@ -1,0 +1,1109 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+    image-rendering: auto;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+
+
+/* GENERALNI STILOVI */
+body,html{
+    background-color:#F7DD23;
+    width:100%;
+    height:100%;
+    font-family: "din-2014";
+}
+
+#logo{
+    display:block;
+    position:absolute;
+    top:30px;
+    left:30px;
+    width:130px;
+    height:90px;
+    background:url(../images/logo.svg) no-repeat 0 0;
+    z-index:11;
+}
+
+.oblak{
+    display:block;
+    position:absolute;
+    width:20000px;
+    height:100%;
+    background-image:url(../images/oblak.png);
+    background-size:1750px 50px;
+    background-position:0 100%;
+    background-repeat:repeat-x;
+    z-index:2;
+    &#sloj1{
+        background-position:200px 120px;
+    }
+    &#sloj2{
+        background-position:603px 372px;
+    }
+    &#sloj3{
+        background-position:1280px 266px;
+    }
+}
+
+#glavniKontejner{
+    border:20px solid #fff;
+    width:100%;
+    height:100%;
+    display:block;
+    position:relative;
+    overflow:hidden;
+}
+
+#unutarnjiKontejner{
+    display:block;
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:110%;
+}
+
+#prstiIZastavaKontejner{
+    display:block;
+    position:absolute;
+    top:-67px;
+    z-index:10;
+    .podKontejner{
+        display:block;
+        position:absolute;
+        width:2732px;
+        height:1538px;
+        top:0;
+        left:0;
+        transform-origin: 0 0;
+        transform: scale(0.5);   
+        overflow:hidden;
+        #lijeviPrsti{
+            display:block;
+            position:absolute;
+            top:130px;
+            left:1160px;
+            background-image:url(../images/lijevi_prsti.png);
+            background-repeat:no-repeat;
+            background-size:235px 637px;
+            transform:translateY(-850px);
+            width:235px;
+            height:637px;
+        }
+        #desniPrsti{
+            display:block;
+            position:absolute;
+            top:130px;
+            left:1430px;            
+            background-image:url(../images/desni_prsti.png);
+            background-repeat:no-repeat;
+            background-size:563px 674px;
+            transform:translateY(-850px);
+            width:563px;
+            height:674px;
+            -webkit-backface-visibility: hidden;
+            image-rendering: -webkit-optimize-contrast;
+        }
+        #zastava{
+            display:block;
+            position:absolute;
+            top:400px;
+            left:1410px;            
+            background-image:url(../images/zastava.png);
+            background-repeat:no-repeat;
+            background-size:301px 963px;
+            width:301px;
+            height:963px;
+            -webkit-backface-visibility: hidden;
+            image-rendering: -webkit-optimize-contrast;
+        }
+        #sjena{
+            display:block;
+            position:absolute;
+            top:1360px;
+            left:721px;            
+            background-image:url(../images/sjena.png);
+            background-repeat:no-repeat;
+            background-size:696px 8px;
+            width:696px;
+            height:8px;
+            -webkit-backface-visibility: hidden;
+            image-rendering: -webkit-optimize-contrast;
+        }
+    }
+}
+
+#svemirskiObjektiKontejner{
+    display:block;
+    position:absolute;
+    width:100%;
+    height:592px;
+    overflow:hidden;
+}
+#canvas_sunce{
+    display:block;
+    position:absolute;
+    top:232px;
+    transform-origin: 0 0;
+    transform:scale(0.5);
+    z-index:1;
+}
+#mjesec{
+    display:block;
+    position:absolute;
+    width:390px;
+    height:390px;
+    top:332px;
+    right:-390px;
+    background-image:url(../images/mjesec.png);
+    background-repeat:no-repeat;
+    background-size:280px 280px;
+    z-index:1;
+}
+#manana{
+    display:block;
+    position:absolute;
+    width:220px;
+    height:94px;
+    background-image:url(../images/manana.png);
+    background-repeat:no-repeat;
+    background-size:220px 94px;
+    top:516px;
+    left:15%;
+    z-index:10;
+}
+#kaktusKontejner{
+    position:relative;
+    z-index:10;
+}
+#kaktus{
+    display:block;
+    position:absolute;
+    width:133px;
+    height:105px;
+    background-image:url(../images/kaktus.png);
+    background-repeat:no-repeat;
+    background-size:133px 105px;
+    top:500px;
+    left:15%;
+    
+}
+#datumKontejner{
+    position:absolute;
+    display:block;
+    top:564px;
+    height:80px;
+    width:100%;
+    z-index:10;
+
+    .prviDatum, .drugiDatum{
+        display:block;
+        position:absolute;
+        width:185px;
+        left:20px;
+        .unutarnjiKontejner{
+            transform-origin: 0 78px;
+            .datum{
+                display:block;
+                position:absolute;
+                top:0;
+                left:0;
+                border:2px solid #000;
+                background-color:#F7DD23;
+                font-size:20px;
+                padding:0 4px;
+                letter-spacing:-0.1px;
+            }
+            .stapka{
+                display:block;
+                position:absolute;
+                border-left:2px solid #000;
+                height:78px;
+            }
+        }
+        &.prviDatum{
+            .unutarnjiKontejner{
+                transform:rotate(4deg);                
+            }
+        }
+        &.drugiDatum{
+            .unutarnjiKontejner{
+                transform:rotate(-3deg);                
+            }
+        }        
+        &:after{
+            content:"";
+            display:block;
+            position:absolute;
+            top:76px;
+            left:-348px;
+            width:348px;
+            height:4px;
+            background-image:url(../images/sjena.png);
+            background-repeat:none;
+            background-size:348px 4px;
+        }
+    }
+}
+#bravoTekst{
+    display:block;
+    position:absolute;
+    top:300px;
+    width:500px;
+    height:400px;
+    font-weight:100;
+    line-height:2.4em;
+    z-index:3;
+    .lijevo, .desno{
+        font-size:40px;
+        width:250px;
+        text-transform: uppercase;
+    }
+    .lijevo{
+        position:absolute;
+        display:block;
+        left:-10px;
+        text-align:right;
+    }
+    .desno{
+        position:absolute;
+        display:block;
+        width:370px;
+        right:-130px;
+        text-align:left;
+    }
+}
+#tlo{
+    display:block;
+    position:absolute;
+    width:100%;
+    height:100%;
+    background-image:url(../images/tlo.png);
+    background-size:301px 157px;
+    background-repeat:repeat-x;
+    top:592px;
+    z-index:9;
+}
+
+#noc{
+    display:block;
+    position:absolute;
+    width:100%;
+    height:100%;
+    background-color:#130F20;
+    opacity:0;
+}
+
+#infoGumb{
+    display:block;
+    position:absolute;
+    top:30px;
+    right:30px;
+    width:30px;
+    height:30px;
+    border:2px solid #000;
+    z-index:50;
+    overflow:hidden;
+    cursor:pointer;
+    opacity:0;
+    span{
+        display:block;
+        position:absolute;
+        width:30px;
+        height:30px;
+        background-repeat:no-repeat;
+        background-size:30px 30px;
+    }
+    span.info{
+        background-image:url(../images/info.png);
+        top:0;
+        left:0;
+    }
+    span.zatvori{
+        background-image:url(../images/close.png);   
+        top:100%;
+        left:0;
+    }
+}
+#infoKontejner{
+    display:block;
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:110%;
+    z-index:40;
+    .infoPodKontejner{
+        width: 85%;
+        margin: 160px 0 0 30px;
+        h1{
+            font-weight:100;
+            font-size:40px;
+            line-height:1.2em;
+            margin-bottom:60px;
+        }
+        h2{
+            font-size:20px;
+            margin-bottom:0;
+        }
+        a{
+            color:#000;
+            text-decoration:none;
+            &:hover{
+                border-bottom:1px solid #000;
+            }
+        }
+        span{
+            display:block;
+            font-weight:100;
+            font-size:20px;
+        }
+        p#legalese{
+            display:block;
+            position:absolute;
+            width:87%;
+            bottom:13px;
+            left:30px;
+            font-size:11px;
+
+        }
+    }
+}
+
+
+/* LAPTOPI */
+@media screen and (max-height: 704px) {
+
+#logo{
+    display:block;
+    position:absolute;
+    top: 30px;
+    left: 30px;
+    width: 130px;
+    height: 90px;
+    background: url(../images/logo.svg) no-repeat 0 0;
+    z-index:11;
+}
+
+
+.oblak{
+    display:block;
+    position:absolute;
+    width:20000px;
+    height:100%;
+    background-image:url(../images/oblak.png);
+    background-size: 1225px 35px;
+    background-position:0 100%;
+    background-repeat:repeat-x;
+    z-index:2;
+    &#sloj1{
+        background-position:200px 90px;
+    }
+    &#sloj2{
+        background-position:603px 322px;
+    }
+    &#sloj3{
+        background-position:1280px 236px;
+    }
+}
+
+#prstiIZastavaKontejner{
+    display:block;
+    position:absolute;
+    top:0;
+    z-index:10;
+}
+
+.podKontejner{
+    top:-47px !important;
+    left:-46px !important;
+    transform-origin: 0 0 !important;
+    transform: scale(0.35) !important;    
+}
+#svemirskiObjektiKontejner{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 414px;
+    overflow:hidden;
+}
+#canvas_sunce{
+    display:block;
+    position: absolute;
+    top: 162px;
+    transform-origin: 0 0;
+    transform: scale(0.35);
+    z-index:1;
+}
+#mjesec{
+    display:block;
+    position:absolute;
+    width: 273;
+    height: 273px;
+    top: 232px;
+    right: -390px;
+    background-image: url(../images/mjesec.png);
+    background-repeat: no-repeat;
+    background-size: 196px 196px;
+    z-index:1;
+}
+#manana{
+    display:block;
+    position:absolute;
+    width: 154px;
+    height: 66px;
+    background-image: url(../images/manana.png);
+    background-repeat: no-repeat;
+    background-size: 154px 66px;
+    top: 363px;
+    left: 15%;
+    z-index:10;
+}
+#kaktus{
+    display:block;
+    position:absolute;
+    width: 93px;
+    height: 74px;
+    background-image: url(../images/kaktus.png);
+    background-repeat: no-repeat;
+    background-size: 93px 74px;
+    top: 350px;
+    left:15%;
+    
+}
+#datumKontejner{
+    position:absolute;
+    display:block;
+    top: 392px;
+    height: 56px;
+    width: 100%;
+    z-index:10;
+
+    .prviDatum, .drugiDatum{
+        display:block;
+        position:absolute;
+        width: 129px;
+        left:14px;
+        .unutarnjiKontejner{
+            transform-origin: 0 45px;
+            .datum{
+                display:block;
+                position:absolute;
+                top:0;
+                left:0;
+                border:1px solid #000;
+                background-color:#F7DD23;
+                font-size:15px;
+                padding:0 4px;
+            }
+            .stapka{
+                display:block;
+                position:absolute;
+                border-left:1px solid #000;
+                height:54px;
+            }
+        }
+        &.prviDatum{
+            .unutarnjiKontejner{
+                transform:rotate(4deg);                
+            }
+        }
+        &.drugiDatum{
+            .unutarnjiKontejner{
+                transform:rotate(-3deg);                
+            }
+        }      
+        span.space{
+            display:inline-block;
+            width:1px;
+        }          
+        &:after{
+            content:"";
+            display:block;
+            position:absolute;
+            top: 54px;
+            left: -243px;
+            width: 243px;
+            height: 4px;
+            background-image: url(../images/sjena.png);
+            background-repeat: none;
+            background-size: 243px 3px; 
+        }
+    }
+}
+#bravoTekst{
+    display:block;
+    position:absolute;
+    top: 210px;
+    width: 350px;
+    height: 280px;
+    font-weight: 100;
+    line-height: 2.2em;
+    z-index:3;
+    .lijevo, .desno{
+        font-size:34px;
+        width:200px;
+        text-transform: uppercase;
+    }
+    .lijevo{
+        position:absolute;
+        display:block;
+        left:44px;
+        text-align:right;
+    }
+    .desno{
+        position:absolute;
+        display:block;
+        width:320px;
+        right:-234px;
+        text-align:left;
+    }
+}
+#tlo{
+    display:block;
+    position:absolute;
+    width:100%;
+    height:100%;
+    background-image:url(../images/tlo.png);
+    background-size: 301px 157px;
+    background-repeat: repeat-x;
+    top: 414px;
+    z-index:9;
+}
+
+#infoKontejner{
+
+    .infoPodKontejner{
+
+        h1{
+        }
+        h2{
+
+        }
+
+        span{
+            font-size:20px;
+        }
+        p#legalese{
+            bottom:13px;
+            left:30px;
+            font-size:11px;
+
+        }
+    }
+}
+
+}
+
+
+/* MOBITELI */
+@media screen and (max-width: 500px) {
+#logo{
+    display:block;
+    position:absolute;
+    top:20px;
+    left:20px;
+    width:90px;
+    height:40px;
+    background:url(../images/logo.svg) no-repeat 0 0;
+    z-index:11;
+}
+#prstiIZastavaKontejner{
+    display:block;
+    position:absolute;
+    top:0;
+    z-index:10;
+}
+
+.podKontejner{
+    top:-38px !important;
+    left:-38px !important;
+    transform-origin: 0 0 !important;
+    transform: scale(0.30) !important;    
+}
+#svemirskiObjektiKontejner{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 356px;
+    overflow:hidden;
+}
+.oblak{
+    display:block;
+    position:absolute;
+    width:20000px;
+    height:100%;
+    background-image:url(../images/oblak.png);
+    background-size: 1225px 35px;
+    background-position:0 100%;
+    background-repeat:repeat-x;
+    z-index:2;
+    &#sloj1{
+        display:none;
+    }
+    &#sloj2{
+        background-position:603px 206px;
+    }
+    &#sloj3{
+        background-position:1280px 236px;
+    }
+}
+#canvas_sunce{
+    display:block;
+    position: absolute;
+    top: 192px;
+    transform-origin: 0 0;
+    transform: scale(0.30);
+    z-index:1;
+}
+#manana{
+    display:block;
+    position:absolute;
+    width: 132px;
+    height: 56px;
+    background-image: url(../images/manana.png);
+    background-repeat: no-repeat;
+    background-size: 132px 56px;
+    top: 312px;
+    left: -10%;
+    z-index:10;
+}
+#kaktus{
+    display:block;
+    position:absolute;
+    width: 80px;
+    height: 64px;
+    background-image: url(../images/kaktus.png);
+    background-repeat: no-repeat;
+    background-size: 80px 64px;
+    top: 300px;
+    left: -10%;
+}
+#bravoTekst{
+    display:block;
+    position:absolute;
+    top: 182px;
+    width: 350px;
+    height: 280px;
+    font-weight: 100;
+    line-height: 1em;
+    z-index:3;
+    .lijevo, .desno{
+        font-size:16px;
+        text-transform: uppercase;
+    }
+    .lijevo{
+        position:absolute;
+        display:block;
+        left:164px;
+        width:53px;
+        text-align:right;
+    }
+    .desno{
+        position:absolute;
+        display:block;
+        width:110px;
+        right:11px;
+        text-align:left;
+    }
+}
+#datumKontejner{
+    position:absolute;
+    display:block;
+    top: 327px;
+    height: 56px;
+    width: 100%;
+    z-index:10;
+
+    .prviDatum, .drugiDatum{
+        display:block;
+        position:absolute;
+        width: 129px;
+        left:14px;
+        .unutarnjiKontejner{
+            transform-origin: 0 45px;
+            .datum{
+                display:block;
+                position:absolute;
+                top:0;
+                left:0;
+                border:1px solid #000;
+                background-color:#F7DD23;
+                font-size:15px;
+                padding:0 4px;
+            }
+            .stapka{
+                display:block;
+                position:absolute;
+                border-left:1px solid #000;
+                height:54px;
+            }
+        }
+        &.prviDatum{
+            .unutarnjiKontejner{
+                transform:rotate(4deg);                
+            }
+        }
+        &.drugiDatum{
+            .unutarnjiKontejner{
+                transform:rotate(-3deg);                
+            }
+        }        
+        &:after{
+            content:"";
+            display:block;
+            position:absolute;
+            top: 54px;
+            left: -243px;
+            width: 243px;
+            height: 4px;
+            background-image: url(../images/sjena.png);
+            background-repeat: none;
+            background-size: 243px 3px; 
+        }
+    }
+}
+#tlo{
+    display:block;
+    position:absolute;
+    width:100%;
+    height:100%;
+    background-image:url(../images/tlo.png);
+    background-size: 259px 135px;
+    background-repeat: repeat-x;
+    top: 356px;
+    z-index:9;
+}
+
+#infoGumb{
+    display:block;
+    position:absolute;
+    top:20px;
+    right:20px;
+    width:30px;
+    height:30px;
+    border:2px solid #000;
+    z-index:50;
+    overflow:hidden;
+    cursor:pointer;
+    span{
+        display:block;
+        position:absolute;
+        width:30px;
+        height:30px;
+        background-repeat:no-repeat;
+        background-size:30px 30px;
+    }
+    span.info{
+        background-image:url(../images/info.png);
+        top:0;
+        left:0;
+    }
+    span.zatvori{
+        background-image:url(../images/close.png);   
+        top:100%;
+        left:0;
+    }
+}
+#infoKontejner{
+    height:100%;
+    overflow:auto;
+    .infoPodKontejner{
+        display:block;
+        position:relative;
+        height:100%;
+        margin:100px 0 0 20px;
+        h1{
+            font-size:30px;
+        }
+        .desktop{
+            display:none;
+        }
+        h2{
+
+        }
+
+        span{
+            font-size:20px;
+        }
+        p#legalese{
+            position:relative;
+            margin:50px 0 40px 0;
+            left:0;
+            font-size:11px;
+
+        }
+    }
+}
+
+}
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

